@@ -32,28 +32,26 @@
       <section id="transaction-section">
         <h2>Transactions</h2>
         <form id="transaction-form">
-          <select id="transaction-account" required>
-            <option value="" disabled selected>Select Account</option>
-          </select>
-          <input
-            type="text"
-            id="transaction-name"
-            placeholder="Description"
-            required />
-          <input
-            type="number"
-            id="transaction-amount"
-            placeholder="Amount"
-            required />
-          <button type="submit">Add Transaction</button>
+            <select id="transaction-account" required>
+                <option value="" disabled selected>Select Account</option>
+            </select>
+            <input type="text" id="transaction-name" placeholder="Description" required>
+            <input type="number" id="transaction-amount" placeholder="Amount" required>
+            <select id="transaction-type" required>
+                <option value="" disabled selected>Transaction Type</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit">Add Transaction</button>
         </form>
+        
         <ul id="transaction-list"></ul>
       </section>
 
-      <section id="projection-section">
+      <!-- <section id="projection-section">
         <h2>Future Projections</h2>
         <div id="projection-results">No projections yet</div>
-      </section>
+      </section> -->
     </main>
     <script src="script.js"></script>
   </body>
