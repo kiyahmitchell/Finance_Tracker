@@ -1,9 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.6;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
   text-align: center;
 }
 
-main {
+.index main {
   padding: 1rem;
   max-width: 800px;
   margin: auto;
@@ -41,4 +40,97 @@ li {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border: 1px solid #ddd;
+}
+
+/* Center the login container only on the login page */
+main.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("/images/codioful-formerly-gradienta-rKv4HduvzIE-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+/* Login Page Styles */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Adjust max-width for responsiveness */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-form h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.login-form input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.login-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-links a {
+  margin: 0 5px;
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 300px;
+  }
 }
